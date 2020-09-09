@@ -40,18 +40,21 @@ export const History = () => {
     if (i > 0) {
       gridHistory.push(
         <Grid key={uuidv4()} item xs={12}>
-          <Button onClick={() => handleClickButton(i)}>#move {i}</Button>{" "}
+          <Typography align="center">
+            <Button onClick={() => handleClickButton(i)}>
+              <Typography align="right">#move {i}</Typography>
+            </Button>
+          </Typography>
         </Grid>
       );
     }
-    
-    }
-    if (winner) {
-        gridHistory.push(
-          <Grid key={uuidv4()} item xs={12}>
-            <Typography>{winner}</Typography>{" "}
-          </Grid>
-        );
+  }
+  if (winner) {
+    gridHistory.push(
+      <Grid key={uuidv4()} item xs={12}>
+        <Typography align="center">{winner}</Typography>{" "}
+      </Grid>
+    );
   }
   return <Grid container>{gridHistory}</Grid>;
 };
