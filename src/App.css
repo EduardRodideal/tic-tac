@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+
+.xo-font {
+  font-size: 2rem !important;
+  color: red !important;
+  width: 5rem !important;
+  height: 5rem !important;
+}
+.margin-table {
+  margin-top: 2rem !important;
+}
+.margin-table-left {
+  margin-left: 2rem !important;
+  width: 12rem !important;
+}
+.game-color{
+  background-color: green !important;
+}
